@@ -4,7 +4,7 @@ This repository is a fork of the original version of Gin: https://github.com/gin
 
 It contains an additional class for conducting a large number of experiments on Non-functional genetic improvement on a program, using automated tests as input to the GI Process, as well as some additional utilities to facilitate the experiment.
 
-This is a replication package for the paper accepted to the SSBSE 2020 Replications and Negative results track, entitled "Impact of Test Suite Coverage on Overfitting in Genetic Improvement of Software" by Mingyi Lim, Giovani Guizzo and Justyna Petke.
+This is a replication package for the paper accepted to the SSBSE 2020 Replications and Negative results track, entitled ["Impact of Test Suite Coverage on Overfitting in Genetic Improvement of Software"](https://link.springer.com/chapter/10.1007%2F978-3-030-59762-7_14) by [Mingyi Lim](https://github.com/mingyi850), Giovani Guizzo and Justyna Petke.
 
 ## Running the experiments
 To run the experiments included in this repository and obtain datafiles with the results, follow the steps below
