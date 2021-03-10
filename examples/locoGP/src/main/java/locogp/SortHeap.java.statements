@@ -1,0 +1,350 @@
+[0] {
+    int i;
+    for (i = (array_size / 2 - 1); i >= 0; --i) {
+        int maxchild, temp, child, root = i, bottom = array_size - 1;
+        while (root * 2 < bottom) {
+            child = root * 2 + 1;
+            if (child == bottom) {
+                maxchild = child;
+            } else {
+                if (a[child] > a[child + 1]) {
+                    maxchild = child;
+                } else {
+                    maxchild = child + 1;
+                }
+            }
+            if (a[root] < a[maxchild]) {
+                temp = a[root];
+                a[root] = a[maxchild];
+                a[maxchild] = temp;
+            } else {
+                break;
+            }
+            root = maxchild;
+        }
+    }
+    for (i = array_size - 1; i >= 0; --i) {
+        int temp;
+        temp = a[i];
+        a[i] = a[0];
+        a[0] = temp;
+        int maxchild, child, root = 0, bottom = i - 1;
+        while (root * 2 < bottom) {
+            child = root * 2 + 1;
+            if (child == bottom) {
+                maxchild = child;
+            } else {
+                if (a[child] > a[child + 1]) {
+                    maxchild = child;
+                } else {
+                    maxchild = child + 1;
+                }
+            }
+            if (a[root] < a[maxchild]) {
+                temp = a[root];
+                a[root] = a[maxchild];
+                a[maxchild] = temp;
+            } else {
+                break;
+            }
+            root = maxchild;
+        }
+    }
+    return a;
+}
+[1] int i;
+[2] for (i = (array_size / 2 - 1); i >= 0; --i) {
+    int maxchild, temp, child, root = i, bottom = array_size - 1;
+    while (root * 2 < bottom) {
+        child = root * 2 + 1;
+        if (child == bottom) {
+            maxchild = child;
+        } else {
+            if (a[child] > a[child + 1]) {
+                maxchild = child;
+            } else {
+                maxchild = child + 1;
+            }
+        }
+        if (a[root] < a[maxchild]) {
+            temp = a[root];
+            a[root] = a[maxchild];
+            a[maxchild] = temp;
+        } else {
+            break;
+        }
+        root = maxchild;
+    }
+}
+[3] {
+    int maxchild, temp, child, root = i, bottom = array_size - 1;
+    while (root * 2 < bottom) {
+        child = root * 2 + 1;
+        if (child == bottom) {
+            maxchild = child;
+        } else {
+            if (a[child] > a[child + 1]) {
+                maxchild = child;
+            } else {
+                maxchild = child + 1;
+            }
+        }
+        if (a[root] < a[maxchild]) {
+            temp = a[root];
+            a[root] = a[maxchild];
+            a[maxchild] = temp;
+        } else {
+            break;
+        }
+        root = maxchild;
+    }
+}
+[4] int maxchild, temp, child, root = i, bottom = array_size - 1;
+[5] while (root * 2 < bottom) {
+    child = root * 2 + 1;
+    if (child == bottom) {
+        maxchild = child;
+    } else {
+        if (a[child] > a[child + 1]) {
+            maxchild = child;
+        } else {
+            maxchild = child + 1;
+        }
+    }
+    if (a[root] < a[maxchild]) {
+        temp = a[root];
+        a[root] = a[maxchild];
+        a[maxchild] = temp;
+    } else {
+        break;
+    }
+    root = maxchild;
+}
+[6] {
+    child = root * 2 + 1;
+    if (child == bottom) {
+        maxchild = child;
+    } else {
+        if (a[child] > a[child + 1]) {
+            maxchild = child;
+        } else {
+            maxchild = child + 1;
+        }
+    }
+    if (a[root] < a[maxchild]) {
+        temp = a[root];
+        a[root] = a[maxchild];
+        a[maxchild] = temp;
+    } else {
+        break;
+    }
+    root = maxchild;
+}
+[7] child = root * 2 + 1;
+[8] if (child == bottom) {
+    maxchild = child;
+} else {
+    if (a[child] > a[child + 1]) {
+        maxchild = child;
+    } else {
+        maxchild = child + 1;
+    }
+}
+[9] {
+    maxchild = child;
+}
+[10] maxchild = child;
+[11] {
+    if (a[child] > a[child + 1]) {
+        maxchild = child;
+    } else {
+        maxchild = child + 1;
+    }
+}
+[12] if (a[child] > a[child + 1]) {
+    maxchild = child;
+} else {
+    maxchild = child + 1;
+}
+[13] {
+    maxchild = child;
+}
+[14] maxchild = child;
+[15] {
+    maxchild = child + 1;
+}
+[16] maxchild = child + 1;
+[17] if (a[root] < a[maxchild]) {
+    temp = a[root];
+    a[root] = a[maxchild];
+    a[maxchild] = temp;
+} else {
+    break;
+}
+[18] {
+    temp = a[root];
+    a[root] = a[maxchild];
+    a[maxchild] = temp;
+}
+[19] temp = a[root];
+[20] a[root] = a[maxchild];
+[21] a[maxchild] = temp;
+[22] {
+    break;
+}
+[23] break;
+[24] root = maxchild;
+[25] for (i = array_size - 1; i >= 0; --i) {
+    int temp;
+    temp = a[i];
+    a[i] = a[0];
+    a[0] = temp;
+    int maxchild, child, root = 0, bottom = i - 1;
+    while (root * 2 < bottom) {
+        child = root * 2 + 1;
+        if (child == bottom) {
+            maxchild = child;
+        } else {
+            if (a[child] > a[child + 1]) {
+                maxchild = child;
+            } else {
+                maxchild = child + 1;
+            }
+        }
+        if (a[root] < a[maxchild]) {
+            temp = a[root];
+            a[root] = a[maxchild];
+            a[maxchild] = temp;
+        } else {
+            break;
+        }
+        root = maxchild;
+    }
+}
+[26] {
+    int temp;
+    temp = a[i];
+    a[i] = a[0];
+    a[0] = temp;
+    int maxchild, child, root = 0, bottom = i - 1;
+    while (root * 2 < bottom) {
+        child = root * 2 + 1;
+        if (child == bottom) {
+            maxchild = child;
+        } else {
+            if (a[child] > a[child + 1]) {
+                maxchild = child;
+            } else {
+                maxchild = child + 1;
+            }
+        }
+        if (a[root] < a[maxchild]) {
+            temp = a[root];
+            a[root] = a[maxchild];
+            a[maxchild] = temp;
+        } else {
+            break;
+        }
+        root = maxchild;
+    }
+}
+[27] int temp;
+[28] temp = a[i];
+[29] a[i] = a[0];
+[30] a[0] = temp;
+[31] int maxchild, child, root = 0, bottom = i - 1;
+[32] while (root * 2 < bottom) {
+    child = root * 2 + 1;
+    if (child == bottom) {
+        maxchild = child;
+    } else {
+        if (a[child] > a[child + 1]) {
+            maxchild = child;
+        } else {
+            maxchild = child + 1;
+        }
+    }
+    if (a[root] < a[maxchild]) {
+        temp = a[root];
+        a[root] = a[maxchild];
+        a[maxchild] = temp;
+    } else {
+        break;
+    }
+    root = maxchild;
+}
+[33] {
+    child = root * 2 + 1;
+    if (child == bottom) {
+        maxchild = child;
+    } else {
+        if (a[child] > a[child + 1]) {
+            maxchild = child;
+        } else {
+            maxchild = child + 1;
+        }
+    }
+    if (a[root] < a[maxchild]) {
+        temp = a[root];
+        a[root] = a[maxchild];
+        a[maxchild] = temp;
+    } else {
+        break;
+    }
+    root = maxchild;
+}
+[34] child = root * 2 + 1;
+[35] if (child == bottom) {
+    maxchild = child;
+} else {
+    if (a[child] > a[child + 1]) {
+        maxchild = child;
+    } else {
+        maxchild = child + 1;
+    }
+}
+[36] {
+    maxchild = child;
+}
+[37] maxchild = child;
+[38] {
+    if (a[child] > a[child + 1]) {
+        maxchild = child;
+    } else {
+        maxchild = child + 1;
+    }
+}
+[39] if (a[child] > a[child + 1]) {
+    maxchild = child;
+} else {
+    maxchild = child + 1;
+}
+[40] {
+    maxchild = child;
+}
+[41] maxchild = child;
+[42] {
+    maxchild = child + 1;
+}
+[43] maxchild = child + 1;
+[44] if (a[root] < a[maxchild]) {
+    temp = a[root];
+    a[root] = a[maxchild];
+    a[maxchild] = temp;
+} else {
+    break;
+}
+[45] {
+    temp = a[root];
+    a[root] = a[maxchild];
+    a[maxchild] = temp;
+}
+[46] temp = a[root];
+[47] a[root] = a[maxchild];
+[48] a[maxchild] = temp;
+[49] {
+    break;
+}
+[50] break;
+[51] root = maxchild;
+[52] return a;

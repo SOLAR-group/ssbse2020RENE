@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="example.ExampleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-26T16:44:30" hostname="justynas-Air.fritz.box" time="2.005">
+  <properties/>
+  <testcase name="profileEnumTest" classname="example.ExampleTest" time="2.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
